@@ -1,4 +1,4 @@
-# BundelB - a file bundler and browser #
+# BundleB - a file bundler and browser #
 
 The projects goal is to create a program that will enable users to bundle different documents with different filetypes together into one 'Bundle'.
 A bundle will then become its own document in which documents can be imported and categorized. An 'Export to pdf' function is high on the wishlist. Which will allow a user to export the entire bundle as a pdf ebook, where catories will turn into chapters.
