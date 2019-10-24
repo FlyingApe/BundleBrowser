@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:id="rootPane" maxHeight="400" maxWidth="600" minHeight="400" minWidth="600" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.bastiaansierd.bundleb.ui.controllers.CategorieAddController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="200.0" text="Selecteer een parent-categorie:" />
+            <TreeView fx:id="categorieTree" onMouseClicked="#checkSelected" prefHeight="483.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="400.0" prefWidth="403.0">
+         <children>
+            <TextField fx:id="categoryName" layoutX="56.0" layoutY="218.0" prefHeight="25.0" prefWidth="291.0" promptText="nieuwe categorie" />
+            <Button onAction="#createNewCat" layoutX="216.0" layoutY="255.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="categorie aanmaken" />
+            <Label fx:id="selectedCategorie" layoutX="56.0" layoutY="145.0" prefHeight="25.0" prefWidth="291.0" text="N/A" />
+            <Label layoutX="56.0" layoutY="120.0" prefHeight="25.0" prefWidth="291.0" text="Geselecteerde parent-categorie:" />
+            <Label fx:id="nieuweCategorie" layoutX="56.0" layoutY="193.0" prefHeight="25.0" prefWidth="291.0" text="Naam nieuwe categorie:" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

@@ -1,0 +1,5 @@
+
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§åàÑûÿÿÿÿ
+Wsquid:S1854";Remove this useless assignment to local variable "lokatie".(¹Ç„’þÿÿÿÿ
+xsquid:S1488#"\Immediately return this expression instead of assigning it to the temporary variable "html".(Ý»ñÛÿÿÿÿÿ
+Hsquid:S1481",Remove this unused "lokatie" local variable.(¹Ç„’þÿÿÿÿ

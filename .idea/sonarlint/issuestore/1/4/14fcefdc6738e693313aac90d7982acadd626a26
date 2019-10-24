@@ -1,0 +1,7 @@
+
+gsquid:S001190"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ıÒ8É±à‡´-
+hsquid:S001195"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ÿÌ‘¸8É±à‡´-
+|squid:S1192"^Define a constant instead of duplicating this literal "src/nl/bastiaansierd/bundleb/" 4 times.(’»› 8É±à‡´-
+msquid:S00119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(’ÅÎ¨ûÿÿÿÿ8É±à‡´-
+€squid:S1488"]Immediately return this expression instead of assigning it to the temporary variable "tekst".(ÏµÔÉıÿÿÿÿ8É±à‡´-
+hsquid:S00119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(·ÁˆÃ8É±à‡´-

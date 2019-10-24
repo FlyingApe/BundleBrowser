@@ -1,0 +1,4 @@
+
+Hsquid:S1481",Remove this unused "lokatie" local variable.(¹Ç„’þÿÿÿÿ
+Wsquid:S1854";Remove this useless assignment to local variable "lokatie".(¹Ç„’þÿÿÿÿ
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§åàÑûÿÿÿÿ

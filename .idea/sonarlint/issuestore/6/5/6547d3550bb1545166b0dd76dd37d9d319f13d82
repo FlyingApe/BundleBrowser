@@ -1,0 +1,5 @@
+
+Isquid:S1075-"&Remove this hard-coded path-delimiter.(—¾òèøÿÿÿÿ8ó¼ÍŠ´-
+€squid:S1450"]Remove the "selectedBundel" field and declare it as a local variable in the relevant methods.(À´¡Çÿÿÿÿÿ8ô¼ÍŠ´-
+nsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(ýÇù¿ûÿÿÿÿ8ô¼ÍŠ´-
+Hsquid:S001084")Either remove or fill this block of code.(”ý¾8ô¼ÍŠ´-

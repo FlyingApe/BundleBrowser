@@ -1,0 +1,5 @@
+
+Œsquid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Éãùşÿÿÿÿ
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(•ş‘·
+Nsquid:S1948
+"0Make "selectedBundel" transient or serializable.(ØŠ8¿è²“´-

@@ -1,0 +1,9 @@
+
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(€Ñ¯Çùÿÿÿÿ
+vsquid:ModifiersOrderCheck
+"EReorder the modifiers to comply with the Java Language Specification.(•ë²®ÿÿÿÿÿ8–Ş‹­-
+?squid:S1148 "#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+asquid:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(í‹›Ìüÿÿÿÿ
+~squid:S00115
+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(•ë²®ÿÿÿÿÿ8–Ş‹­-
