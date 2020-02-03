@@ -7,6 +7,7 @@ import nl.bastiaansierd.bundleb.logic.BundelBEnvironment;
 import nl.bastiaansierd.datalogger.logic.Logger;
 
 import java.io.File;
+import java.nio.file.Files;
 
 public class BundelDirectoyChooser{
     private String kopTekst;
@@ -20,15 +21,19 @@ public class BundelDirectoyChooser{
         DirectoryChooser dirChooser = new DirectoryChooser();
         dirChooser.setTitle(kopTekst);
 
-        File directory = new File(System.getProperty("user.home"));
-
         SettingTracker settingTracker = BundelBEnvironment.getInstance().getObjectGenerator().getSettingTracker();
         try{
-            directory = new File(settingTracker.getBundelRootDirectory());
+            File directory = new File(settingTracker.getBundelRootDirectory());
+            if (!Files.exists(directory.toPath())){
+                settingTracker.setBundelRootDirectory(System.getProperty("user.home"));
+            }
         } catch (Exception e){
             Logger.log("BundelBDirectoryChooser.getMap", "Standaard directory niet aangegeven ");
+            settingTracker.setBundelRootDirectory(System.getProperty("user.home"));
         }
-        dirChooser.setInitialDirectory(directory);
+
+
+        dirChooser.setInitialDirectory(new File (settingTracker.getBundelRootDirectory()));
         File dir = dirChooser.showDialog(stage);
         return dir;
     }

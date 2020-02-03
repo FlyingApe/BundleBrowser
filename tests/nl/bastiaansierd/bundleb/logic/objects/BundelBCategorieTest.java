@@ -1,21 +1,18 @@
 package nl.bastiaansierd.bundleb.logic.objects;
 
 import nl.bastiaansierd.bundleb.enums.LeafType;
-import nl.bastiaansierd.bundleb.interfaces.logic.objects.Bundel;
 import nl.bastiaansierd.bundleb.interfaces.logic.objects.BundelLeaf;
-import nl.bastiaansierd.bundleb.interfaces.logic.objects.Categorie;
+import nl.bastiaansierd.bundleb.interfaces.logic.objects.Category;
 import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class BundelBCategorieTest {
-    Categorie categorie = new BundelBCategorie("tester");
+    Category categorie = new BundelBCategory("tester");
 
     @Test
     void addChild() {
-        BundelLeaf subCat = new BundelBCategorie("testSub");
+        BundelLeaf subCat = new BundelBCategory("testSub");
         categorie.addChild(subCat);
 
         assertNotNull(categorie.getChildren());
@@ -35,7 +32,7 @@ class BundelBCategorieTest {
     void getChildren() {
         assertEquals(0, categorie.getChildren().size());
 
-        BundelLeaf subCat = new BundelBCategorie("testSub");
+        BundelLeaf subCat = new BundelBCategory("testSub");
         categorie.addChild(subCat);
 
         assertEquals(1,categorie.getChildren().size());

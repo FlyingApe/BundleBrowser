@@ -5,7 +5,7 @@ import nl.bastiaansierd.bundleb.interfaces.data.DataRouter;
 import nl.bastiaansierd.bundleb.interfaces.logic.BundelLogic;
 import nl.bastiaansierd.bundleb.interfaces.logic.ObjectGenerator;
 import nl.bastiaansierd.bundleb.interfaces.logic.objects.Bundel;
-import nl.bastiaansierd.bundleb.interfaces.logic.objects.Categorie;
+import nl.bastiaansierd.bundleb.interfaces.logic.objects.Category;
 import nl.bastiaansierd.bundleb.interfaces.logic.objects.Header;
 import nl.bastiaansierd.bundleb.logic.helpers.XMLBundelTreeParser;
 import org.w3c.dom.Document;
@@ -40,7 +40,7 @@ public class BundelBBundelLogic implements BundelLogic {
         Document doc = data.getBundelTreeDoc();
         XMLBundelTreeParser treeParser = new XMLBundelTreeParser(doc);
 
-        Categorie tree = treeParser.getTree();
+        Category tree = treeParser.getTree();
 
         return gen.getBundel(dirName, directoryPath, tree);
     }

@@ -1,6 +1,7 @@
 package nl.bastiaansierd.bundleb.logic.objects;
 
 import nl.bastiaansierd.bundleb.interfaces.logic.objects.Bundel;
+import nl.bastiaansierd.bundleb.interfaces.logic.objects.BundelLeaf;
 import nl.bastiaansierd.bundleb.interfaces.logic.objects.EnvironmentObject;
 
 import java.io.Serializable;
@@ -33,5 +34,4 @@ public class BundelBEnvironmentObject implements EnvironmentObject, Serializable
     public void removeOpenBundel(Bundel bundel){
         openBundels.remove(bundel);
     }
-
 }

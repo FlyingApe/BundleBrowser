@@ -5,5 +5,5 @@ public interface Bundel {
 
     String getBundelPath();
 
-    Categorie getTree();
+    Category getTree();
 }

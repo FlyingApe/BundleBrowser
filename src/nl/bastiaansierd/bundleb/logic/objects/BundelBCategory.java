@@ -2,23 +2,30 @@ package nl.bastiaansierd.bundleb.logic.objects;
 
 import nl.bastiaansierd.bundleb.enums.LeafType;
 import nl.bastiaansierd.bundleb.interfaces.logic.objects.BundelLeaf;
-import nl.bastiaansierd.bundleb.interfaces.logic.objects.Categorie;
+import nl.bastiaansierd.bundleb.interfaces.logic.objects.Category;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class BundelBCategorie implements Categorie, Serializable {
+public class BundelBCategory implements Category, Serializable {
     private final LeafType leafType = LeafType.CATEGORY;
     private String naam;
     private ArrayList<BundelLeaf> children = new ArrayList<>();
 
-    public BundelBCategorie(String naam) {
+    public BundelBCategory(String naam) {
         this.naam = naam;
     }
 
     //setters
     public void addChild(BundelLeaf leaf){
         children.add(leaf);
+    }
+
+    public void insertChild(BundelLeaf leaf, int index) {children.add(index, leaf);}
+
+    @Override
+    public void removeChild(BundelLeaf leaf) {
+        children.remove(leaf);
     }
 
     //getters

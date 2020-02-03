@@ -1,14 +1,13 @@
 package nl.bastiaansierd.bundleb.logic.objects;
 
 import nl.bastiaansierd.bundleb.interfaces.logic.objects.Bundel;
-import nl.bastiaansierd.bundleb.logic.BundelBEnvironment;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class BundelBEnvironmentObjectTest {
     BundelBEnvironmentObject envObject = new BundelBEnvironmentObject();
-    Bundel nieuweBundel = new BundelBBundel("TestBundel", "c:\\fakepath", new BundelBCategorie("EmptyCat"));
+    Bundel nieuweBundel = new BundelBBundel("TestBundel", "c:\\fakepath", new BundelBCategory("EmptyCat"));
 
     @Test
     void getOpenBundels() {

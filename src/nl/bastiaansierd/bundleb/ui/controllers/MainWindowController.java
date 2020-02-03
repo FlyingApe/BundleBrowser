@@ -156,7 +156,7 @@ public class MainWindowController implements SelectedBundelListener{
 
     @FXML
     private void addNewCategorie(){
-        popUpBundelEdit("/nl/bastiaansierd/bundleb/ui/views/CategorieAdd.fxml", "Voeg een Categorie toe");
+        popUpBundelEdit("/nl/bastiaansierd/bundleb/ui/views/CategorieAdd.fxml", "Voeg een Category toe");
     }
 
     @FXML

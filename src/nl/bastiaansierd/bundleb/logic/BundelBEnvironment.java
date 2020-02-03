@@ -5,6 +5,7 @@ import nl.bastiaansierd.bundleb.interfaces.data.DataRouter;
 import nl.bastiaansierd.bundleb.interfaces.logic.ObjectGenerator;
 import nl.bastiaansierd.bundleb.interfaces.logic.SelectedBundelListener;
 import nl.bastiaansierd.bundleb.interfaces.logic.objects.Bundel;
+import nl.bastiaansierd.bundleb.interfaces.logic.objects.BundelLeaf;
 import nl.bastiaansierd.bundleb.interfaces.logic.objects.EnvironmentObject;
 import nl.bastiaansierd.datalogger.logic.Logger;
 

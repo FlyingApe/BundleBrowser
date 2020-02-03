@@ -3,6 +3,7 @@ package nl.bastiaansierd.bundleb.logic.objects;
 
 import nl.bastiaansierd.bundleb.enums.LeafType;
 import nl.bastiaansierd.bundleb.enums.PageType;
+import nl.bastiaansierd.bundleb.interfaces.logic.objects.Category;
 import nl.bastiaansierd.bundleb.interfaces.logic.objects.Header;
 
 import java.io.Serializable;
@@ -14,10 +15,19 @@ public class BundelBHeader implements Header, Serializable {
     private String address;
     private PageType pageType = PageType.HTML;
     private Boolean locallyStored = false;
+    private Category parent;
 
     public BundelBHeader(String name, String address) {
         this.name = name;
         this.address = address;
+    }
+
+    public Category getParent() {
+        return parent;
+    }
+
+    public void setParent(Category parent) {
+        this.parent = parent;
     }
 
     public void setPageType(PageType pageType) {
@@ -46,7 +56,7 @@ public class BundelBHeader implements Header, Serializable {
         return locallyStored;
     }
 
-    @Override
+    //@Override
     public String toString(){
         return getLeafType().toString() + ": " + getName() + "\n";
     }

@@ -1,13 +1,13 @@
 package nl.bastiaansierd.bundleb.logic.objects;
 
 import nl.bastiaansierd.bundleb.interfaces.logic.objects.Bundel;
-import nl.bastiaansierd.bundleb.interfaces.logic.objects.Categorie;
+import nl.bastiaansierd.bundleb.interfaces.logic.objects.Category;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class BundelBBundelTest {
-    private Bundel bundel = new BundelBBundel("Test", "C:\\fakepath", new BundelBCategorie("testCat"));
+    private Bundel bundel = new BundelBBundel("Test", "C:\\fakepath", new BundelBCategory("testCat"));
 
     @Test
     void getNaam() {
@@ -23,8 +23,8 @@ class BundelBBundelTest {
 
     @Test
     void getTree() {
-        Categorie root = bundel.getTree();
-        Categorie shouldBeLike = (Categorie) new BundelBCategorie("testCat");
+        Category root = bundel.getTree();
+        Category shouldBeLike = (Category) new BundelBCategory("testCat");
 
         assertEquals(shouldBeLike.toString(), root.toString());
     }
